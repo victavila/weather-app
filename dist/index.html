@@ -8,5 +8,51 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="content-container">
+        <div>
+          <h2 class="city"></h2>
+          <h2 class="description"></h2>
+          <div>
+            <img src="" class="weather-icon" />
+            <h2 class="temperature"></h2>
+          </div>
+          <p class="high-low"></p>
+        </div>
+        <div class="info">
+          <div class="card">
+            <p>Feels like</p>
+            <p class="feels"></p>
+          </div>
+          <div class="card">
+            <p>Humidity</p>
+            <p class="humidity"></p>
+          </div>
+          <div class="card">
+            <p>Pressure</p>
+            <p class="pressure"></p>
+          </div>
+          <div class="card">
+            <p>Wind Speed</p>
+            <p class="speed"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="units">
+      <span class="celsius">°C</span>/
+      <span class="fahrenheit bold">°F</span>
+    </button>
+    <div class="form-container">
+      <form class="form" autocomplete="off">
+        <div class="search-bar">
+          <input type="search" id="search" />
+          <div class="button-container">
+            <button type="submit" class="search">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
