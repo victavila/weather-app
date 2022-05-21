@@ -1,8 +1,123 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: var(--main-font);
+}
+
+:root {
+  --main-bg-color: #48484a;
+  --button-color: #e96e50;
+  --white: #f2f2f2;
+  --light-gray: #cccccc;
+  --main-font: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 100%;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+.container {
+  background-color: var(--main-bg-color);
+  height: 16.67vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--white);
+}
+
+.search-bar {
+  display: flex;
+}
+
+#search {
+  border: none;
+  width: 400px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.search {
+  background-color: var(--button-color);
+  border: none;
+  height: 40px;
+  color: var(--white);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.units {
+  border: none;
+  background-color: var(--white);
+  font-size: 1.3rem;
+  padding: 10px 70px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+}
+
+.content-container {
+  background-color: var(--main-bg-color);
+}
+
+.main-info {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.city {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.description {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.temperature {
+  font-size: 5rem;
+  padding: 10px;
+}
+
+.secondary-info {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.card {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.label {
+  font-size: 1.3rem;
+  color: var(--light-gray);
+  padding-bottom: 5px;
 }
